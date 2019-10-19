@@ -1,0 +1,395 @@
+/*@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');*/
+@font-face {
+  font-family: "MyRoboto";
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+h1,h2,h3,h4{
+  font-family: "MyRoboto";
+  letter-spacing: 1.5px;
+}
+
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: "MyRoboto";
+  margin: 0;
+}
+.img{
+  display: block;
+  max-width: 100%;
+}
+.contenedor{
+  margin: auto;
+  width: 90%;
+}
+.ref{
+  text-decoration: none;
+  color: white;
+}
+.grafica{
+	background-color: white;
+}
+.graf{
+	width: 99%;
+}
+
+/** estilos header **/
+
+.header{
+  height: 60px;
+}
+.header .contenedor{
+  display: flex;
+  justify-content: space-between;
+}
+.icon_menu{
+  display: block;
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  text-align: center;
+  cursor: pointer;
+  top: 20px;
+}
+.icon_menu2{
+  width: 30px;
+}
+.logo{
+  font-size: 25px;
+}
+.logo, .icon_menu{
+  margin: 5px;
+  color: #c52293;
+  -webkit-text-stroke: 0.2px white;
+}
+/*** stilos menu ***/
+.nav{
+  position: absolute;
+  top: 60px;
+  left: -100%;
+  width: 100%;
+  transition: all 1s;
+}
+.menu{
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+.menu_link{
+  display: block;
+  padding: 15px;
+  background-color:#c52293;
+  text-decoration: none;
+  color: white;
+  font-family: "MyRoboto"
+}
+.menu_link:hover, .select{
+  background: white;
+  color: #c52293;
+}
+.mostrar{
+  left: 0px;
+}
+/** estilos del banner **/
+.banner{
+  margin-top: -60px;
+  position: relative;
+  z-index: -1000;
+  margin-bottom: 15px;
+}
+.banner_img{
+  width: 100%;
+}
+.banner .contenedor{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: #c52293;
+  -webkit-text-stroke: 0.2px white;
+}
+.banner_txt{
+  display: none;
+}
+/********** estilos info *******/
+.miki{
+  overflow: scroll;
+}
+.info_columnaM{
+  height: 800px;
+  background: #c52293;
+  color: white;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.info_columnaG{
+  background: #c52293;
+  color: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.info_columnaC{
+  background: #c52293;
+  color: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.info_columnaS{
+  background: #c52293;
+  color: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.info_columna{
+  background: #c52293;
+  color: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.info_img{
+  width: 50%;
+}
+
+/**** estilo pie de pagina */
+.footer{
+  background: #3a3a3a;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+.footer .social [class^="icon-"]{
+  display: inline-block;
+  color: #333;
+  text-decoration: none;
+  font-size: 30px;
+  padding: 10px;
+  background: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 40px;
+}
+.footer .imgs{
+  width: 30px;
+}
+
+/* ------- responsive ------*/
+@media(min-width:480px) {
+  .info_consulta{
+    display: flex;
+    justify-content: space-between;
+  }
+  .info_mapa{
+    display: block;
+  }
+  .info_columnaM{
+    width: 98%;
+    margin-top: -30px;
+  }
+  .info_columnaC{
+    width: 24%;
+    margin-top: -50px;
+  }
+  .info-select{
+    display: block;
+  }
+  .logo{
+      font-size: 50px;
+  }
+  .icon_menu{
+    width: 50px;
+    align-items: center;
+    margin-top: 15px;
+  }
+  .icon_menu2{
+    width: 40px;
+  }
+  .banner_titulo{
+    font-size: 35px;
+    margin: 5px;
+  }
+  .banner_txt{
+    margin: 7px;
+    font-size: 18px;
+  }
+  .info{
+    display: block;
+    justify-content: space-between;
+    margin-top: -70px;
+		display: block;
+  }
+  .info_columna{
+    width: 98%;
+  }
+  .info_titulo{
+    font-size: 18px;
+  }
+  .info_txt{
+    font-size: 13px;
+  }
+
+}
+@media(min-width:960px) {
+  .logo{
+      font-size: 60px;
+  }
+  .icon_menu{
+    width: 50px;
+    align-items: center;
+    margin-top: 15px;
+  }
+  .icon_menu2{
+    width: 40px;
+  }
+  .banner_titulo{
+    font-size: 55px;
+    margin: 5px;
+  }
+  .banner_txt{
+    display: block;
+    margin: 10px;
+    font-size: 25px;
+  }
+  .info{
+    display: block;
+    justify-content: space-between;
+    margin-top: -70px;
+  }
+  .info_columna{
+    width: 98%;
+  }
+  .info_titulo{
+    font-size: 22px;
+  }
+  .info_txt{
+    font-size: 18px;
+  }
+
+}
+@media(min-width:1024px) {
+  .info_columnaM{
+    margin-top: -150px;
+  }
+  .contenedor{
+    width: 1200px;
+  }
+  .nav{
+    position: static;
+    width: auto;
+  }
+  .menu{
+    display: flex;
+  }
+  .menu_link{
+    background: none;
+    color: #c52293;
+  }
+  .select{
+    background: #c52293;
+    color: white;
+  }
+  .icon_menu{
+    display: none;
+  }
+  .logo{
+      font-size: 60px;
+  }
+  .icon_menu{
+    width: 50px;
+    align-items: center;
+    margin-top: 15px;
+  }
+  .icon_menu2{
+    width: 40px;
+  }
+  .banner_titulo{
+    font-size: 55px;
+    margin: 5px;
+  }
+  .banner_txt{
+    display: block;
+    margin: 10px;
+    font-size: 25px;
+  }
+  .info{
+    display: block;
+    margin-top: -110px;
+		width: 100%;
+  }
+  .info_columna{
+    width: 100%;
+  }
+  .info_titulo{
+    font-size: 22px;
+  }
+  .info_txt{
+    font-size: 18px;
+  }
+	.info_columnaG{
+		width: 49%;
+	}
+	.infoG{
+	display: flex;
+	justify-content: space-between;
+	margin-top: -70px;
+}
+
+}
+/*** estilos del mapa */
+#control_map{
+	margin-top: 20px;
+  margin-bottom: 40px;
+}
+.map{
+	right: 80px;
+	top:0px;
+}
+#content_mapa{
+  float:right;
+}
+.content_list_states{
+	float:left;
+	color: #555;
+}
+.listaEdos{
+	cursor:pointer;
+	margin: 11px 0px;
+	display: block;
+	font-size: 14px;
+}
+.listaEdos:hover,.listaEdosHover{
+	color: #950054;
+	font-weight: 600;
+}
+.listaEdosActive{
+	color: #950054;
+	font-weight: 600;
+}
+
+#edo{/*letras del estado*/
+	/*position: absolute;top: 120px;left: 560px;*/
+        position: relative; top: -440px;left: 265px;
+        font-size: 2em;
+	color: #950054 ;z-index: 2;
+	text-align: center;
+	width: 200px;
+}
+.escudo{
+	/*position: absolute; top: 160px;left: 650px;*/
+  position: relative; top: -420px;left: 355px;
+	width:120px;
+	height:120px;
+	float: left;
+}
+.escudo_img{
+	background: transparent url(../image/escudos.png);
+}
+.AGU{background-position: 960px 480px;}.BCN{background-position: 840px 480px;}.BCS{background-position: 720px 480px;}.CAM{background-position: 600px 480px;}.COA{background-position: 480px 480px;}.COL{background-position: 360px 480px;}.CHP{background-position: 240px 480px;}.CHH{background-position: 120px 480px;}.DIF{background-position: 960px 360px;}.DUR{background-position: 840px 360px;}.GUA{background-position: 720px 360px;}.GRO{background-position: 600px 360px;}.HID{background-position: 480px 360px;}.JAL{background-position: 360px 360px;}.MEX{background-position: 240px 360px;}.MIC{background-position: 120px 360px;}.MOR{background-position: 960px 240px;}.NAY{background-position: 840px 240px;}.NLE{background-position: 720px 240px;}.OAX{background-position: 600px 240px;}.PUE{background-position: 480px 240px;}.QUE{background-position: 360px 240px;}.ROO{background-position: 240px 240px;}.SLP{background-position: 120px 240px;}.SIN{background-position: 960px 120px;}.SON{background-position: 840px 120px;}.TAB{background-position: 720px 120px;}.TAM{background-position: 600px 120px;}.TLA{background-position: 480px 120px;}.VER{background-position: 360px 120px;}.YUC{background-position: 240px 120px;}.ZAC{background-position: 120px 120px;}

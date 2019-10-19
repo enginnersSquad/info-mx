@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Info-Mx</title>
+    <meta name="viewport" content="width=device-width,
+    user=scalable=no, initial-scale=1.0, maximum-scale=1.0,
+    minimum-scale=1.0">
+    <link rel="stylesheet" href="css/estiloPrincipal.css">
+    <script src="js/functions.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/tabs.js" ></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="contenedor">
+        <h1 class="logo"><img src="image/logo.jpeg"></h1>
+        <span class="icon_menu" id="btn_menu"><img class="icon_menu2" src="image/menu.png"></span>
+        <nav class="nav" id="nav">
+					<ul class="menu">
+            <li class="menu_item"><a class="menu_link select" href="index.html">Inicio</a></li>
+            <li class="menu_item"><a class="menu_link" href="mapa.html">Mapa</a></li>
+            <li class="menu_item"><a class="menu_link" href="acercade.html">Acerca de</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="banner">
+      <img src="image/banner.jpg" class="banner_img">
+      <div class="contenedor">
+        <h2 class="banner_titulo">Info-Mx</h2>
+        <p class="banner_txt">Es una aplicacion web que permite el acceso a la transparencia de la información pública.</p>
+      </div>
+    </div>
+    <script src="js/menu.js"></script>
+    <main class="main">
+      <div class="contenedor">
+        <section class="info_consulta">
+          <article class="info_columnaC">
+            <img src="image/info.svg" class="info_img">
+            <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Categoria 1</button>
+          </article>
+          <article class="info_columnaC">
+            <img src="" class="info_img">
+            <button class="tablinks" onclick="openCity(event, 'Paris')">Categoria 2</button>
+          </article>
+          <article class="info_columnaC">
+            <img src="" class="info_img">
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Categoria 3</button>
+          </article>
+          <article class="info_columnaC">
+            <img src="" class="info_img">
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Categoria 4</button>
+          </article>
+        </section>
+        <section class="info-select">
+          <article class="info_columnaS">
+            <div id="London" class="tabcontent">
+              <h3>London</h3>
+              <p>London is the capital city of England.</p>
+            </div>
+            <div id="Paris" class="tabcontent">
+              <h3>Paris</h3>
+              <p>Paris is the capital of France.</p>
+              <div class="card-view">
+                <div class="card-image"></div>
+                <div class="card-header">SUJETO OBLIGADO</div>
+              </div>
+            </div>
+            <div id="Tokyo" class="tabcontent">
+              <h3>Tokyo</h3>
+              <p>Tokyo is the capital of Japan.</p>
+            </div>
+            <div class="recientes" >
+              <h2>Checa los mayores gastos del gobierno...</h2>
+              <table>
+                <th>Descipcion</th> <th>Link</th>
+                <tr><td>informe 1</td><td><a href="" >VER MAS</a></td></tr>
+                <tr><td>informe 2</td><td><a href="" >VER MAS</a></td></tr>
+                <tr><td>informe 3</td><td><a href="" >VER MAS</a></td></tr>
+                <tr><td>informe 4</td><td><a href="" >VER MAS</a></td></tr>
+              </table>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="social">
+        <div class="icon-">
+          <img src="image/facebook.png" alt="" class="imgs">
+        </div>
+        <div class="icon-">
+          <img src="image/instagram.png" alt="" class="imgs">
+        </div>
+        <div class="icon-">
+          <img src="image/twitter.png" alt="" class="imgs">
+        </div>
+        <p class="copy">&copy; Data-FreeMex - Todos los derechos reservados</p>
+      </div>
+    </footer>
+  </body>
+</html>
